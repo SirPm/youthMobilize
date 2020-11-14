@@ -62,7 +62,7 @@
                             <img src="../assets/insta-icon.svg" alt="insta" class="social-icon">
                             <img src="../assets/twitter-icon.svg" alt="twitter" class="social-icon">
                             <img src="../assets/fb-icon.svg" alt="fb" class="social-icon">
-                            <div class="social-icon earth-icon"><img src="../assets/earth.png" alt="earth"></div>
+                            <img src="../assets/planet-earth.svg" alt="earth" class="social-icon">
                         </div>
                     </div>
                 </div>
