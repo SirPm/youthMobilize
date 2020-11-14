@@ -97,8 +97,8 @@ export default {
                 border-bottom: 4px solid #46E146;
             }
 
-            #htDesktop .health-tip-img {
-                height: 63%;
+            #htDesktop .health-tip-content {
+                margin-top: 30px;
             }
 
             .health-tip-content .title {
@@ -161,7 +161,7 @@ export default {
     .health-tip-content {
         display: flex;
         flex-direction: column;
-        /* height: 15vh; */
+        margin-top: 20px;
     }
 
     .title {
@@ -226,32 +226,30 @@ export default {
 
         @media only screen and (max-width: 750px) and (min-width: 650px) {
 
-            #htDesktop .health-tip-img {
-                height: 55%;
-            }
+            
 
         }
 
         @media only screen and (max-width: 1050px) and (min-width: 850px) {
 
-            #htDesktop .health-tip-img {
-                height: 65%;
-            }
+            
 
         }
 
         @media only screen and (max-width: 1150px) and (min-width: 1050px) {
 
-            #htDesktop .health-tip-img {
-                height: 67%;
-            }
+            
 
         } 
 
         @media only screen and (min-width: 1150px) {
 
             #htDesktop .health-tip-img {
-                height: 69%;
+                height: 66%;
+            }
+
+            #htDesktop .health-tip-content {
+                margin-top: 20px;
             }
 
         }       

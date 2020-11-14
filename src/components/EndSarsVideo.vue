@@ -117,11 +117,11 @@ export default {
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-size: 30px;
                 font-weight: bold;
-                margin-bottom: 1rem;
+                margin-bottom: 20px;
             }
 
             .related-content-title {
-                margin: 1rem 0;
+                margin: 20px 0;
             }
 
             .top-videos-paragraph {
