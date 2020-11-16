@@ -240,7 +240,7 @@ export default {
     }
 
     .footer-ending {
-        /* margin-top: 35px; */
+        margin-top: 35px;
         font-size: 12px;
     }
 
