@@ -158,7 +158,7 @@ export default {
     .footer {
         width: 95%;
         margin: auto;
-        padding: 3rem 0;
+        padding-bottom: 3rem;
     }
 
     .heading {
@@ -171,12 +171,16 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 80vh;
+        padding-top: 3rem;
     }
 
     .upper-footer-links, .lower-footer-links {
         display: flex;
         justify-content: space-between;
+    }
+
+    .lower-footer-links {
+        margin-top: 3rem;
     }
 
     .footer-links-div {

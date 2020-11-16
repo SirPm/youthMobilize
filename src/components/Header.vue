@@ -59,7 +59,9 @@
 
         <!-- Mobile Template Markup -->
 
-        <img class="youth-mobilize-logo" src="../assets/youth-mobilize-logo.png" alt="youthMobilize">
+        <div class="youth-mobilize-logo-div">
+            <img class="youth-mobilize-logo" src="../assets/youth-mobilize-logo.png" alt="youthMobilize">
+        </div>
         <div class="header-icons-div">
             <img class="person-icon" src="../assets/person-icon.svg" alt="person-icon">
             <img class="search-icon" src="../assets/search-icon.svg" alt="search-icon">
@@ -151,7 +153,7 @@ export default {
 
     @media screen and (min-width: 650px) {
 
-        .header .header-icons-div, .youth-mobilize-logo {
+        .header .header-icons-div, .youth-mobilize-logo-div {
             display: none;
         }
 
@@ -326,10 +328,15 @@ export default {
         display: none;
     }
 
+    .youth-mobilize-logo-div {
+        width: 20%;
+    }
+
     .youth-mobilize-logo {
-        width: 30%;
+        width: 100%;
+        height: 100%;
         background-color: #00000029;
-        padding: 20px;
+        padding: 10px;
     }
 
     .person-icon {
@@ -350,7 +357,7 @@ export default {
 
     .header-icons-div {
         background-color: #0F6D0F;
-        width: 70%;
+        width: 80%;
         display: flex;
         align-items: center;
     }
