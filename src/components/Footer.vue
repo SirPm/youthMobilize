@@ -67,15 +67,14 @@
                     </div> -->
                 </div>
             </div>
-            <!-- <hr class="horizontal-rule"> -->
-            <!-- <div class="footer-ending">
+            <div class="footer-ending">
                 <span class="rights">All Rights Reserved, &copy; 2020 YouthMobilize</span>
                 <div class="terms-privacy-cookies">
                     <span class="tpc">Terms of Service</span>
                     <span class="tpc">Privacy</span>
                     <span class="tpc">Cookies</span>
                 </div>
-            </div> -->
+            </div>
         </div>
     </footer>
 </template>
