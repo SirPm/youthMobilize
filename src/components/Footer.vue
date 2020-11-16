@@ -203,6 +203,7 @@ export default {
         flex-direction: column;
         width: 50%;
         margin-right: 10%;
+        height: fit-content;
     }
 
     .select-lang {
