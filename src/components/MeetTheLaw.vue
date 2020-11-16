@@ -94,8 +94,8 @@ export default {
             .meet-the-law .heading {
                 border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 2%;
+                padding-right: 2%;
                 display: flex;
                 justify-content: space-between;
             }
@@ -103,14 +103,14 @@ export default {
             .card-and-content {
                 display: flex;
                 justify-content: space-between;
-                width: 90%;
+                width: 96%;
                 margin: auto;
             }
 
             .card-and-content .card {
                 margin: 0;
                 box-shadow: none;
-                width: 49%;
+                width: 50%;
             }
 
             .card-and-content .content {
@@ -173,7 +173,7 @@ export default {
         border-bottom: 1px solid #95989A;
         padding: 2rem 0;
         margin-bottom: 0.5rem;
-        padding-left: 10%;
+        padding-left: 2%;
     }
 
     .text {
@@ -184,7 +184,7 @@ export default {
     }
 
     .card {
-        width: 85%;
+        width: 96%;
         margin: auto;
         box-shadow: 0 3px 6px #00000012;
         border-radius: 6px;
@@ -216,7 +216,7 @@ export default {
     }
 
     .content {
-        width: 85%;
+        width: 96%;
         margin: auto;
         margin-top: 1rem;
     }

@@ -35,7 +35,7 @@ export default {
 
         .below-header {
             display: flex;
-            width: 85%;
+            width: 90%;
             margin: auto;
         }
 
@@ -48,7 +48,6 @@ export default {
             width: 80%;
             margin: 2rem auto;
             border-radius: 10px;
-            height: 25vh;
         }
 
         .below-header .below-header-div .it {
@@ -76,7 +75,6 @@ export default {
 
     .below-header-div {
         display: flex;
-        height: 18vh;
         box-shadow: 0 3px 6px #B7A71B;
         margin-top: 2rem;
     }
@@ -95,7 +93,7 @@ export default {
 
     .aisha {
         width: 35%;
-        height: 100%;
+        /* height: 100%; */
     }
 
     .aisha img {

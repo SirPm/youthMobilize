@@ -12,7 +12,22 @@
                 <div class="trending-topic-img">
                     <img src="../assets/trending-topic-1.png" alt="trendingTopic1">
                 </div>
-                <span class="trending-topic-text trending-topics-typography">The protest continues</span>
+                <div class="trending-topic-content">
+                    <span class="trending-topic-text trending-topics-typography">The protest continues</span>
+                    <div class="trending-topic-icons">
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                        </div>
+                    </div>
+                </div>
                 <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
@@ -22,7 +37,22 @@
                 <div class="trending-topic-img">
                     <img src="../assets/trending-topic-2.png" alt="trendingTopic2">
                 </div>
-                <span class="trending-topic-text trending-topics-typography">We must not give up now</span>
+                <div class="trending-topic-content">
+                    <span class="trending-topic-text trending-topics-typography">We must not give up now</span>
+                    <div class="trending-topic-icons">
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                        </div>
+                    </div>
+                </div>
                 <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
@@ -32,8 +62,23 @@
                 <div class="trending-topic-img">
                     <img src="../assets/trending-topic-3.png" alt="trendingTopic3">
                 </div>
-                <span class="trending-topic-text trending-topics-typography tttm">What is the role of international communities on ENDSARS</span>
-                <span class="trending-topic-text trending-topics-typography tttd">International Communities on Endsars</span>
+                <div class="trending-topic-content">
+                    <span class="trending-topic-text trending-topics-typography tttm">What is the role of international communities on ENDSARS</span>
+                    <div class="trending-topic-icons">
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                            <span class="trending-icon-text">2,346</span>
+                        </div>
+                        <div class="trending-topic-icon-content">
+                            <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                        </div>
+                    </div>
+                    <span class="trending-topic-text trending-topics-typography tttd">International Communities on Endsars</span>
+                </div>
                 <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
@@ -104,7 +149,7 @@ export default {
                 box-shadow: 0 0 black;
             }
 
-            .trending-topics .trending-topics-label-arrow-mobile, .tttm {
+            .trending-topics .trending-topics-label-arrow-mobile, .tttm, .trending-topic .trending-topic-icons {
                 display: none;
             }
 
@@ -115,8 +160,8 @@ export default {
             .trending-topics .trending-topics-label {
                 border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 2%;
+                padding-right: 2%;
                 justify-content: space-between;
             }
 
@@ -133,7 +178,7 @@ export default {
 
             .trending-topics .trending-topics-body {
                 flex-direction: row;
-                width: 90%;
+                width: 97%;
                 margin: auto;
             }
 
@@ -150,7 +195,7 @@ export default {
             .trending-topics-body .trending-topic {
                 /* height: 55vh; */
                 flex-direction: column;
-                width: 31%;
+                width: 32%;
                 padding-bottom: 0;
                 justify-content: space-around;
             }
@@ -159,14 +204,19 @@ export default {
                 border-bottom: 0;
             }
 
+            .trending-topic .trending-topic-content {
+                margin-top: 0;
+                width: 100%;
+            }
+
             .trending-topic .trending-topic-img {
                 width: 100%;
             }
 
             .trending-topic .trending-topic-text {
                 width: 100%;
-                margin: 1rem 0;
-                margin-left: 15%;
+                height: 45px;
+                margin-left: 5%;
             }
 
             .trending-topic .trending-topic-img img {
@@ -211,7 +261,7 @@ export default {
         border-bottom: 1px solid #D0CDE1;
         padding: 2rem 0;
         margin-bottom: 1.5rem;
-        padding-left: 10%;
+        padding-left: 2%;
     }
 
     .trending-topics-label-arrow-desktop, .trending-topics .ttpb-desktop, .trending-topic-video, .tttd {
@@ -247,7 +297,7 @@ export default {
     .trending-topic {
         display: flex;
         justify-content: space-between;
-        width: 85%;
+        width: 96%;
         margin: auto;
         border-bottom: 1px solid #00000029;
         margin-bottom: 1.5rem;
@@ -257,6 +307,14 @@ export default {
     .last-trending-topic {
         border-bottom: 0px;
         margin-bottom: 1rem;
+    }
+
+    .trending-topic-content {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-top: 30%;
+        justify-content: space-between;
     }
 
     .trending-topic-img {
@@ -270,10 +328,24 @@ export default {
     }
 
     .trending-topic-text {
-        width: 45%;
+        /* width: 45%; */
         color: #333333;
         font-size: 16px;
-        align-self: center;
+        /* align-self: center; */
+    }
+
+    .trending-topic-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trending-topic-icon-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .trending-icon-text {
+        margin-left: 15%;
     }
 
 
@@ -286,6 +358,14 @@ export default {
                 margin-left: 50%;
             }
 
+            .trending-topic-content {
+                margin-top: 0;
+            }
+
+            .trending-topic-icon-content {
+                font-size: 12px;
+            }
+
         }
 
         @media only screen and (max-width: 450px) and (min-width: 350px) {
@@ -295,6 +375,14 @@ export default {
                 margin-left: 55%;
             }
 
+            .trending-topic-content {
+                margin-top: 10%;
+            }
+
+            .trending-topic-icon-content {
+                font-size: 12px;
+            }
+
         }
 
         @media only screen and (max-width: 550px) and (min-width: 450px) {
@@ -302,6 +390,10 @@ export default {
             .trending-topics-label-arrow-mobile {
                 width: 35%;
                 margin-left: 55%;
+            }
+
+            .trending-topic-content {
+                margin-top: 20%;
             }
 
         }

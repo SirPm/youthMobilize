@@ -109,21 +109,21 @@ export default {
             .communities .communities-label {
                 border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 3%;
+                padding-right: 3%;
                 justify-content: space-between;
             }
 
             .communities .communities-body {
                 flex-direction: row;
-                width: 90%;
+                width: 97%;
                 margin: auto;
             }
 
             .communities-body .community {
                 border-bottom: 0;
                 flex-direction: column;
-                width: 31%;
+                width: 32%;
                 padding-bottom: 0;
                 justify-content: space-around;
                 margin: 0 auto;
@@ -144,7 +144,7 @@ export default {
 
             .community-text-div .community-text {
                 margin-top: 3%;
-                height: 70px;
+                height: 60px;
             }
 
             .community .community-img img {
@@ -195,7 +195,7 @@ export default {
         border-bottom: 1px solid #D0CDE1;
         padding: 2rem 0;
         margin-bottom: 1.5rem;
-        padding-left: 10%;
+        padding-left: 2%;
     }
 
     .communities-label-arrow-desktop, .community-pinned-text-div {
@@ -231,7 +231,7 @@ export default {
     .community {
         display: flex;
         justify-content: space-between;
-        width: 85%;
+        width: 96%;
         margin: auto;
         border-bottom: 1px solid #00000029;
         margin-bottom: 1.5rem;
@@ -270,7 +270,6 @@ export default {
     .community-text {
         color: #333333;
         font-size: 16px;
-        align-self: center;
     }
 
 

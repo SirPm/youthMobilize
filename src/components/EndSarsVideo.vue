@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="endsars-videos-list">
-                <div class="endsars-videos-list-item pb">
+                <div class="endsars-videos-list-item mb">
                     <div class="video-list-item-img">
                         <img src="../assets/candle-night.png" alt="candleLight">
                     </div>
@@ -46,7 +46,7 @@
                         <span class="video-text endsars-video-text-typography">Candle light held for the stained</span>
                     </div>
                 </div>
-                <div class="endsars-videos-list-item pt">
+                <div class="endsars-videos-list-item mt">
                     <div class="video-list-item-img">
                         <img src="../assets/lekki-shooting.png" alt="lekkiShooting">
                     </div>
@@ -85,7 +85,7 @@ export default {
             .endsars-videos .endsars-video {
                 display: flex;
                 justify-content: space-between;
-                width: 90%;
+                width: 96%;
                 /* height: 60vh; */
                 background-color: #ffffff;
                 z-index: 100;
@@ -106,11 +106,11 @@ export default {
             .endsars-video .top-videos-div {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
+                /* justify-content: space-evenly; */
                 color: #ffffff;
                 background-color: #0F6D0F;
                 padding: 0 20px;
-                width: 49%;
+                width: 49.5%;
             }
 
             .top-videos-title {
@@ -121,7 +121,7 @@ export default {
             }
 
             .related-content-title {
-                margin: 20px 0;
+                margin: 10px 0;
             }
 
             .top-videos-paragraph {
@@ -129,7 +129,7 @@ export default {
             }
 
             .endsars-videos .endsars-video img {
-                width: 49%;
+                width: 49.5%;
             }
 
             .related-content-text {
@@ -144,20 +144,24 @@ export default {
             }
 
             .endsars-videos-inner .endsars-videos-list-item {
-                width: 49%;
+                width: 49.5%;
                 margin: 0;
+            }
+
+            .endsars-videos-list-item .video-info {
+                width: 73.3%;
             }
 
             .endsars-videos-inner .endsars-videos-list {
                 flex-direction: row;
-                width: 90%;
+                width: 96%;
                 margin: auto;
                 box-shadow: 0 0 0 white;
                 background-image: linear-gradient(45deg, transparent, transparent);
                 background: white;
                 padding-bottom: 0;
                 justify-content: space-between;
-                padding-top: 20px;
+                padding-top: 14px;
             }
 
             .endsars-videos-list .pb, .endsars-videos-list .pt {
@@ -182,7 +186,7 @@ export default {
     }
 
     .endsars-video {
-        width: 85%;
+        width: 96%;
         margin: auto;
         position: relative;
         z-index: -300;
@@ -211,19 +215,19 @@ export default {
     }
 
     .endsars-videos-list-item {
-        width: 85%;
+        width: 96%;
         margin: auto;
         display: flex;
         justify-content: space-between;
         background-color: #ffffff;
     }
 
-    .pb {
-        padding-bottom: 7px;
+    .mb {
+        margin-bottom: 5px;
     }
 
-    .pt {
-        padding-top: 7px;
+    .mt {
+        margin-top: 5px;
     }
 
     .video-list-item-img {
@@ -237,7 +241,7 @@ export default {
 
     .video-info {
         background-color: #0F6D0F;
-        width: 72%;
+        width: 73.8%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

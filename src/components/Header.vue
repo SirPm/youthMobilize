@@ -134,7 +134,7 @@ export default {
 
     .header {
         width: 100%;
-        height: 10vh;
+        height: fit-content;
         display: flex;
         box-shadow: 0 3px 6px #00000029;
     }
@@ -162,7 +162,7 @@ export default {
         }
 
         .header .desktop-header .desktop-header-inner {
-            width: 90%;
+            width: 96%;
             margin: auto;
             display: flex;
             justify-content: space-between;
@@ -170,7 +170,7 @@ export default {
 
         .desktop-youth-mobilize-logo {
             width: 10%;
-            height: 10vh;
+            /* height: 10vh; */
             background-color: #ffffff;
             padding: 20px 5px;
         }
@@ -592,6 +592,15 @@ export default {
 
             .search-icon {
                 width: 10%;
+            }
+
+        }
+
+        @media only screen and (max-width: 950px) and (min-width: 650px) {
+
+            .home-icon {
+                width: 25%;
+                margin-left: 55%;
             }
 
         }

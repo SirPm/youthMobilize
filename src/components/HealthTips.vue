@@ -68,8 +68,8 @@ export default {
             .health-tips .heading {
                 border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
-                padding-left: 7%;
-                padding-right: 7%;
+                padding-left: 2%;
+                padding-right: 2%;
                 display: flex;
                 justify-content: space-between;
             }
@@ -95,10 +95,6 @@ export default {
 
             .health-tip .health-tip-img {
                 border-bottom: 4px solid #46E146;
-            }
-
-            #htDesktop .health-tip-content {
-                margin-top: 30px;
             }
 
             .health-tip-content .title {
@@ -129,7 +125,7 @@ export default {
         border-bottom: 1px solid #95989A;
         padding: 2rem 0;
         margin-bottom: 0.5rem;
-        padding-left: 10%;
+        padding-left: 2%;
     }
 
     .heading-text {
@@ -141,7 +137,7 @@ export default {
     .health-tips-div {
         display: flex;
         justify-content: space-between;
-        width: 85%;
+        width: 96%;
         margin: auto;
         margin-top: 1.5rem;
     }
@@ -161,21 +157,20 @@ export default {
     .health-tip-content {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
     }
 
     .title {
         color: #2D8CFF;
         font-size: 12px;
         height: 20%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .text {
         color: #707070;
         font-size: 14px;
         height: 80%;
-        margin-top: 10%;
+        margin-top: 5%;
         line-height: 25px;
     }
 
@@ -244,13 +239,7 @@ export default {
 
         @media only screen and (min-width: 1150px) {
 
-            #htDesktop .health-tip-img {
-                height: 66%;
-            }
-
-            #htDesktop .health-tip-content {
-                margin-top: 20px;
-            }
+            
 
         }       
 

@@ -7,7 +7,7 @@
                         <span class="heading">Home</span>
                         <ul class="footer-links-div">
                             <li><a href="!#" class="footer-link">Trending</a></li>
-                            <li><a href="!#" class="footer-link">Community</a></li>
+                            <li><a href="!#" class="footer-link">Communities</a></li>
                             <li><a href="!#" class="footer-link">Meet the Law</a></li>
                             <li><a href="!#" class="footer-link">Health Tips</a></li>
                             <li><a href="!#" class="footer-link">Our Team</a></li>
@@ -23,7 +23,7 @@
                             <li><a href="!#" class="footer-link">Tech & Innovations</a></li>
                             <li><a href="!#" class="footer-link">Entertainment</a></li>
                             <li><a href="!#" class="footer-link">The Lawyers</a></li>
-                            <li><a href="!#" class="footer-link">Medical Communities</a></li>
+                            <li><a href="!#" class="footer-link">Medical Community</a></li>
                             <li><a href="!#" class="footer-link">Sport</a></li>
                         </ul>
                     </div>
@@ -32,10 +32,10 @@
                         <ul class="footer-links-div">
                             <li><a href="!#" class="footer-link">123-456-789</a></li>
                             <li><a href="!#" class="footer-link">Contact Sales</a></li>
-                            <li><a href="!#" class="footer-link">Pricing & Plans</a></li>
+                            <li><a href="!#" class="footer-link">Pricing & Plan</a></li>
                             <li><a href="!#" class="footer-link">Request a Demo</a></li>
                             <li><a href="!#" class="footer-link">Webinars & Events</a></li>
-                            <li><a href="!#" class="footer-link">Blogs</a></li>
+                            <li><a href="!#" class="footer-link">Blog</a></li>
                             <li><a href="!#" class="footer-link">Site Map</a></li>
                         </ul>
                     </div>
@@ -46,7 +46,7 @@
                         <ul class="footer-links-div">
                             <li><a href="!#" class="footer-link">FAQ</a></li>
                             <li><a href="!#" class="footer-link">Job</a></li>
-                            <li><a href="!#" class="footer-link">Feedbacks</a></li>
+                            <li><a href="!#" class="footer-link">Feedback</a></li>
                             <li><a href="!#" class="footer-link">Accessibility</a></li>
                             <li><a href="!#" class="footer-link">Privacy & Security</a></li>
                             <li><a href="!#" class="footer-link">Support Center</a></li>
@@ -62,12 +62,12 @@
                             <img src="../assets/insta-icon.svg" alt="insta" class="social-icon">
                             <img src="../assets/twitter-icon.svg" alt="twitter" class="social-icon">
                             <img src="../assets/fb-icon.svg" alt="fb" class="social-icon">
-                            <img src="../assets/planet-earth.svg" alt="earth" class="social-icon">
+                            <img src="../assets/earth.svg" alt="earth" class="social-icon">
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="horizontal-rule">
+            <!-- <hr class="horizontal-rule"> -->
             <div class="footer-ending">
                 <span class="rights">All Rights Reserved, &copy; 2020 YouthMobilize</span>
                 <div class="terms-privacy-cookies">
@@ -94,6 +94,10 @@ export default {
             
             #footer {
                 margin-top: 10rem;
+            }
+
+            #footer .footer {
+                width: 80%;
             }
 
             .footer .footer-links {
@@ -152,7 +156,7 @@ export default {
     }
 
     .footer {
-        width: 85%;
+        width: 95%;
         margin: auto;
         padding: 3rem 0;
     }
@@ -193,6 +197,8 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 50%;
+        margin-right: 10%;
     }
 
     .select-lang {
@@ -231,7 +237,7 @@ export default {
     }
 
     .footer-ending {
-        margin-top: 2rem;
+        margin-top: 3rem;
         font-size: 12px;
     }
 
@@ -259,10 +265,6 @@ export default {
                 font-size: 10px;
             }
 
-            .footer-link-div {
-                width: 60%;
-            }
-
             .footer-lang-and-social {
                 width: 40%;
             }
@@ -288,7 +290,7 @@ export default {
             }
 
             .footer-lang-and-social {
-                width: 40%;
+                width: 35%;
             }
 
             .social-icon {
@@ -297,6 +299,14 @@ export default {
 
             .terms-privacy-cookies {
                 width: 80%;
+            }
+
+        }
+
+        @media only screen and (max-width: 650px) and (min-width: 450px) {
+
+            .footer-ending .terms-privacy-cookies {
+                width: 50%;
             }
 
         }
