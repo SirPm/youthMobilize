@@ -118,17 +118,9 @@ export default {
                 width: 47%;
             }
 
-            .footer-lang-and-social .heading {
-                width: fit-content;
-            }
-
             .footer-lang-and-social .select-lang {
                 color: #ffffff;
                 background-color: #B7A71B;
-            }
-
-            .footer-lang-and-social .social-icons {
-                margin-bottom: 2.5rem;
             }
 
             .social-icons .social-icon {
@@ -206,12 +198,10 @@ export default {
     }
 
     .select-lang {
-        width: fit-content;
         padding: 10px;
-        font-size: 11px;
         color: #34B434;
         font-weight: bold;
-        /* margin-bottom: 35px; */
+        margin-bottom: 35px;
     }
 
     .social-icons {
@@ -229,14 +219,6 @@ export default {
 
     .earth-icon {
         display: flex;
-    }
-
-    .horizontal-rule {
-        background-color: #DCD5CB;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 6.5rem;
     }
 
     .footer-ending {
