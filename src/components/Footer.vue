@@ -200,7 +200,6 @@ export default {
     .footer-lang-and-social {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 50%;
         margin-right: 10%;
     }
@@ -211,13 +210,12 @@ export default {
         font-size: 11px;
         color: #34B434;
         font-weight: bold;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     .social-icons {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
     }
 
     .social-icon {

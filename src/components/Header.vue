@@ -139,6 +139,7 @@ export default {
         height: fit-content;
         display: flex;
         box-shadow: 0 3px 6px #00000029;
+        position: relative;
     }
 
     ul {
@@ -376,10 +377,10 @@ export default {
 
     .menu-btn.close {
         background-color: red;
-        height: 10vh;
         top: 0;
         right: 0;
         width: 12vw;
+        height: 100%;
     }
 
     .menu-btn__burger {
@@ -634,11 +635,48 @@ export default {
 
         }
 
-        @media only screen and (max-width: 1150px) and (min-width: 1050px) {
-
-            
-
+        @media only screen and (max-width: 350px) and (min-width: 300px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -25px;
+            }
         } 
+        @media only screen and (max-width: 400px) and (min-width: 350px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -21px;
+            }
+        } 
+        @media only screen and (max-width: 450px) and (min-width: 400px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -18px;
+            }
+        } 
+        @media only screen and (max-width: 500px) and (min-width: 450px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -14px;
+            }
+        } 
+        @media only screen and (max-width: 550px) and (min-width: 500px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -11px;
+            }
+        } 
+        @media only screen and (max-width: 600px) and (min-width: 550px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -6px;
+            }
+        } 
+        @media only screen and (max-width: 650px) and (min-width: 600px) {
+            .nav .menu-nav {
+                height: 91vh;
+                margin-top: -3px;
+            }
+        }
 
         @media only screen and (min-width: 1050px) {
 

@@ -140,7 +140,7 @@ export default {
             .related-content-item {
                 display: flex;
                 align-items: center;
-                margin-bottom: 0.7rem;
+                margin-bottom: 8px;
             }
 
             .endsars-videos-inner .endsars-videos-list-item {
