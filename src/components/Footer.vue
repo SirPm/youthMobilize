@@ -58,12 +58,12 @@
                             <option>English</option>
                             <option>French</option>
                         </select>
-                        <!-- <div class="social-icons">
+                        <div class="social-icons">
                             <img src="../assets/insta-icon.svg" alt="insta" class="social-icon">
                             <img src="../assets/twitter-icon.svg" alt="twitter" class="social-icon">
                             <img src="../assets/fb-icon.svg" alt="fb" class="social-icon">
                             <img src="../assets/earth.svg" alt="earth" class="social-icon">
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,14 +211,6 @@ export default {
 
     .social-icon {
         width: 10%;
-    }
-
-    .social-icon img {
-        width: 100%;
-    }
-
-    .earth-icon {
-        display: flex;
     }
 
     .footer-ending {
