@@ -52,7 +52,7 @@
                             <li><a href="!#" class="footer-link">Support Center</a></li>
                         </ul>
                     </div>
-                    <div class="footer-lang-and-social">
+                    <!-- <div class="footer-lang-and-social">
                         <span class="heading">Language</span>
                         <select class="select-lang">
                             <option>English</option>
@@ -64,18 +64,18 @@
                             <img src="../assets/fb-icon.svg" alt="fb" class="social-icon">
                             <img src="../assets/earth.svg" alt="earth" class="social-icon">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- <hr class="horizontal-rule"> -->
-            <div class="footer-ending">
+            <!-- <div class="footer-ending">
                 <span class="rights">All Rights Reserved, &copy; 2020 YouthMobilize</span>
                 <div class="terms-privacy-cookies">
                     <span class="tpc">Terms of Service</span>
                     <span class="tpc">Privacy</span>
                     <span class="tpc">Cookies</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </footer>
 </template>
