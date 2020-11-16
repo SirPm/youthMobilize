@@ -52,7 +52,7 @@
                             <li><a href="!#" class="footer-link">Support Center</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="footer-lang-and-social">
+                    <div class="footer-lang-and-social">
                         <span class="heading">Language</span>
                         <select class="select-lang">
                             <option>English</option>
@@ -64,7 +64,7 @@
                             <img src="../assets/fb-icon.svg" alt="fb" class="social-icon">
                             <img src="../assets/earth.svg" alt="earth" class="social-icon">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="footer-ending">
