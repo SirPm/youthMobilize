@@ -112,6 +112,7 @@ export default {
 
             .footer-links .lower-footer-links {
                 width: 35%;
+                margin-top: 0;
             }
 
             .lower-footer-links .footer-link-div, .lower-footer-links .footer-lang-and-social {
@@ -210,7 +211,7 @@ export default {
         font-size: 11px;
         color: #34B434;
         font-weight: bold;
-        margin-bottom: 3rem;
+        margin-bottom: 35px;
     }
 
     .social-icons {
@@ -239,7 +240,7 @@ export default {
     }
 
     .footer-ending {
-        margin-top: 3rem;
+        margin-top: 35px;
         font-size: 12px;
     }
 
