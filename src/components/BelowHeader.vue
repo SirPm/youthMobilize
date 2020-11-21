@@ -56,7 +56,7 @@ export default {
         }
 
         .end-sars-div .end-sars {
-            font-size: 2.9rem;
+            font-size: 70px;
         }
 
         .it-text-div .it-text {
@@ -154,15 +154,19 @@ export default {
 
         }
 
-        @media only screen and (max-width: 750px) and (min-width: 650px) {
+        @media only screen and (max-width: 850px) and (min-width: 650px) {
 
-            
+            .end-sars-div .end-sars {
+                font-size: 50px;
+            }
 
         }
 
         @media only screen and (max-width: 1050px) and (min-width: 850px) {
 
-            
+            .end-sars-div .end-sars {
+                font-size: 60px;
+            }
 
         }
 

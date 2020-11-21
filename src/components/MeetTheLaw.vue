@@ -83,16 +83,17 @@ export default {
             .heading .meet-the-law-arrow-desktop {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                width: 21%;
+                margin-right: 1%;
             }
 
             .heading .meet-the-law-arrow-desktop .meet-the-law-arrow-text {
                 color: #333333;
+                white-space: nowrap;
+                margin-right: 5%;
             }
 
             .meet-the-law .heading {
-                border-top: 1px solid #D0CDE1;
+                /* border-top: 1px solid #D0CDE1; */
                 border-bottom: 0;
                 padding-left: 2%;
                 padding-right: 2%;
@@ -105,6 +106,7 @@ export default {
                 justify-content: space-between;
                 width: 96%;
                 margin: auto;
+                height: 350px;
             }
 
             .card-and-content .card {
@@ -118,10 +120,13 @@ export default {
                 background-color: #ffffff;
                 padding: 20px;
                 width: 49%;
+                box-shadow: 0 3px 6px #00000029;
+                border-radius: 5px;
             }
 
             .card .card-img {
                 border-bottom: 6px solid #46E146;
+                height: 100%;
             }
 
             .card .card-text {
@@ -131,7 +136,8 @@ export default {
             .card-text .title {
                 color: #0F6D0F;
                 font-weight: bold;
-                margin-top: 1.5rem;
+                margin-top: 1%;
+                margin-left: 2%;
             }
 
             .content .ci-desktop {
@@ -178,7 +184,7 @@ export default {
 
     .text {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
+        font-size: 30px;
         color: #333333;
         font-weight: bold;
     }
@@ -186,7 +192,7 @@ export default {
     .card {
         width: 96%;
         margin: auto;
-        box-shadow: 0 3px 6px #00000012;
+        /* box-shadow: 0 3px 6px #00000012; */
         border-radius: 6px;
         margin-top: 1.5rem;
     }
@@ -241,9 +247,8 @@ export default {
     .meet-the-law-arrow-mobile {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 28%;
-        margin-left: 65%;
+        justify-content: flex-end;
+        margin-right: 3%;
         padding-bottom: 1.5rem;
     }
 
@@ -251,6 +256,7 @@ export default {
         color: #46E146;
         font-weight: bold;
         font-size: 12px;
+        margin-right: 3%;
     }
 
 
@@ -258,18 +264,21 @@ export default {
 
         @media only screen and (max-width: 350px) and (min-width: 300px) {
 
-            .meet-the-law-arrow-mobile {
+            /* .meet-the-law-arrow-mobile {
                 width: 45%;
                 margin-left: 50%;
-            }
+            } */
 
         }
 
-        @media only screen and (max-width: 450px) and (min-width: 350px) {
+        @media only screen and (max-width: 650px) and (min-width: 300px) {
 
-            .meet-the-law-arrow-mobile {
-                width: 35%;
-                margin-left: 55%;
+            .card::after {
+                content: "";
+                border-bottom: 0.1px solid #00000012;
+                width: 100%;
+                left: 0;
+                position: absolute;
             }
 
         }
@@ -278,11 +287,34 @@ export default {
 
             .card .card-img[data-v-3b5444c8] {
                 border-bottom: 6px solid #46E146;
-                height: 60vh;
+            }
+
+            .card-and-content {
+                height: 450px;
             }
 
             .card-and-content .card[data-v-3b5444c8] {
                 background-color: #ffffff;
+            }
+
+        }
+
+        @media only screen and (min-width: 1000px) {
+
+            .card-and-content {
+                height: 500px;
+            }
+
+            .card-and-content .content {
+                padding-top: 30px;
+            }
+
+            .content .content-title {
+                font-size: 18px;
+            }
+
+            .content-item .content-item-text {
+                font-size: 16px;
             }
 
         }

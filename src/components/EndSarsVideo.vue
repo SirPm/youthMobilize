@@ -3,7 +3,7 @@
         <div class="endsars-videos-inner">
             <div class="endsars-video">
                 <img src="../assets/Endsars1.png" alt="endsars1">
-                <img src="../assets/play-icon.png" alt="play-icon" class="related-content-play-icon" id="playIcon">
+                <img src="../assets/play-grey.png" alt="play-icon" class="related-content-play-icon" id="playIcon">
                 <div class="top-videos-div">
                     <h3 class="top-videos-title">Top Videos</h3>
                     <p class="top-videos-paragraph">The most recent event videos across the Country on Police brutality and extortions</p>
@@ -86,7 +86,7 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 width: 96%;
-                /* height: 60vh; */
+                height: 350px;
                 background-color: #ffffff;
                 z-index: 100;
             }
@@ -107,22 +107,23 @@ export default {
                 display: flex;
                 flex-direction: column;
                 /* justify-content: space-evenly; */
+                justify-content: space-between;
                 color: #ffffff;
                 background-color: #0F6D0F;
-                padding: 0 20px;
                 width: 49.5%;
+                padding: 10px 20px;
             }
 
             .top-videos-title {
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-size: 30px;
                 font-weight: bold;
-                margin-bottom: 20px;
+                /* margin-bottom: 20px; */
             }
 
-            .related-content-title {
+            /* .related-content-title {
                 margin: 10px 0;
-            }
+            } */
 
             .top-videos-paragraph {
                 font-size: 14px;
@@ -196,10 +197,10 @@ export default {
         position: absolute;
         width: 9%;
         border-radius: 50%;
-        padding: 7px;
+        padding: 10px;
         top: 50%;
         right: 50%;
-        background-color: #0F6D0F;
+        background-color: #ffffff;
     }
 
     .endsars-video img {
@@ -244,18 +245,20 @@ export default {
         width: 73.8%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding-left: 15px;
+        padding-top: 5%;
     }
 
     .video-title {
         font-style: italic;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .video-text {
         font-size: 12px;
+        margin-top: 3%;
     }
 
 
@@ -291,9 +294,9 @@ export default {
 
         @media only screen and (max-width: 1150px) and (min-width: 950px) {
 
-            .endsars-video #playIcon {
+            /* .endsars-video #playIcon {
                 width: 4%;
-            }
+            } */
 
             .endsars-videos .endsars-video .related-content-play-icon {
                 width: 5%;
@@ -301,25 +304,31 @@ export default {
 
         }
 
-        @media only screen and (max-width: 1150px) and (min-width: 1050px) {
+        @media only screen and (max-width: 1150px) and (min-width: 850px) {
 
-            
+            /* .endsars-video .top-videos-div {
+                padding: 0 20px;
+            } */
 
         } 
 
         @media only screen and (min-width: 1150px) {
 
-            .endsars-video #playIcon {
+            /* .endsars-video #playIcon {
                 width: 3%;
-            }
+            } */
 
             .endsars-videos .endsars-video .related-content-play-icon {
                 width: 4%;
             }
 
-            .endsars-video .top-videos-div {
-                justify-content: normal;
-            }
+            /* .endsars-videos .endsars-video {
+                height: 350px;
+            } */
+
+            /* .endsars-video .top-videos-div {
+                padding: 10px 20px;
+            } */
 
         }       
 

@@ -4,8 +4,8 @@
         <!-- Desktop Template Markup -->
 
         <div class="desktop-header">
+            <img src="../assets/youth-mobilize-logo.png" alt="youthMobilize" class="desktop-youth-mobilize-logo">
             <div class="desktop-header-inner">
-                <img src="../assets/youth-mobilize-logo.png" alt="youthMobilize" class="desktop-youth-mobilize-logo">
                 <ul class="desktop-links">
                     <li class="desktop-link-item desktop-link-item-home">
                         <div class="home"><img src="../assets/homeIcon.svg" alt="homeIcon" class="home-icon"></div>
@@ -18,10 +18,10 @@
                     <li class="desktop-link-item">
                         <div class="communities"><img src="../assets/communities-icon.png" alt="communitiesIcon" class="dli-icon"></div>
                         <div class="dli-sub">
-                            <a href="!#" class="desktop-link">Communities</a>
-                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon">
+                            <span class="desktop-link">Communities</span>
+                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksCommunity">
                         </div>
-                        <ul class="sub-desktop-links">
+                        <ul class="sub-desktop-links" v-bind:class="{ showSubDesktopLinks : subDesktopLinksStatusCommunity }">
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Nigerian Youths</a></li>
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Nigerians in Diaspora</a></li>
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Tech & Innovations</a></li>
@@ -34,10 +34,10 @@
                     <li class="desktop-link-item">
                         <div class="more"><img src="../assets/more-icon.svg" alt="moreIcon" class="dli-icon"></div>
                         <div class="dli-sub">
-                            <a href="!#" class="desktop-link">More</a>
-                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon">
+                            <span class="desktop-link">More</span>
+                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksMore">
                         </div>
-                        <ul class="sub-desktop-links">
+                        <ul class="sub-desktop-links" v-bind:class="{ showSubDesktopLinks : subDesktopLinksStatusMore }">
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Post Articles</a></li>
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Jobs</a></li>
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Contact Us</a></li>
@@ -115,7 +115,9 @@ export default {
     data() {
         return {
             isOpen: false,
-            isClose: false
+            isClose: false,
+            subDesktopLinksStatusCommunity: false,
+            subDesktopLinksStatusMore: false
         }
     },
     methods: {
@@ -126,6 +128,20 @@ export default {
             } else {
                 this.isOpen = false;
                 this.isClose = false;
+            }
+        },
+        toggleSubLinksCommunity() {
+            if(!this.subDesktopLinksStatusCommunity) {
+                this.subDesktopLinksStatusCommunity = true;
+            } else {
+                this.subDesktopLinksStatusCommunity = false;
+            }
+        },
+        toggleSubLinksMore() {
+            if(!this.subDesktopLinksStatusMore) {
+                this.subDesktopLinksStatusMore = true;
+            } else {
+                this.subDesktopLinksStatusMore = false;
             }
         }
     }
@@ -161,21 +177,22 @@ export default {
         .header .desktop-header {
             background-color: #0F6D0F;
             width: 100vw;
-            display: block;
+            display: flex;
         }
 
         .header .desktop-header .desktop-header-inner {
             width: 96%;
-            margin: auto;
+            /* margin: auto; */
             display: flex;
             justify-content: space-between;
+            margin-right: 2%;
         }
 
         .desktop-youth-mobilize-logo {
-            width: 10%;
-            /* height: 10vh; */
-            background-color: #ffffff;
-            padding: 20px 5px;
+            width: 13%;
+            background-color: #B9D4B9;
+            padding: 12px 20px;
+            padding-top: 20px;
         }
 
         .desktop-links {
@@ -184,6 +201,7 @@ export default {
             align-items: center;
             width: 50%;
             position: relative;
+            margin-left: 10%;
         }
 
         .desktop-link-item {
@@ -191,7 +209,7 @@ export default {
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 1.1rem;
+            /* margin-bottom: 1.1rem; */
         }
 
         .desktop-link-item-home {
@@ -205,14 +223,20 @@ export default {
 
         .desktop-link-item:nth-child(3) .dli-sub .caret-icon {
             width: 10%;
-        } 
+        }
 
         .home, .trending, .communities, .more {
             display: none;
         }
 
-        .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more, .desktop-link-item:hover > .sub-desktop-links {
+        .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more {
             display: block;
+        }
+
+        .desktop-link-item:hover > .desktop-link, .desktop-link-item:hover > .dli-sub > .desktop-link {
+            border-bottom: 3px solid #46E146;
+            padding-bottom: 30px;
+            border-radius: 3px;
         }
 
         .sub-desktop-links {
@@ -221,10 +245,13 @@ export default {
             background-color: #D0CDE1;
             padding: 10px 15px;
             border-radius: 10px;
-            display: flex;
             flex-direction: column;
             align-items: center;
             display: none;
+        }
+
+        .showSubDesktopLinks {
+            display: flex;
         }
 
         .sub-desktop-link-item {
@@ -273,6 +300,7 @@ export default {
             display: inline-block;
             margin-left: 5%;
             align-self: center;
+            cursor: pointer;
         }
 
         .desktop-link {
@@ -285,8 +313,9 @@ export default {
         .desktop-sign-in-search-and-text {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 25%;
+            padding-top: 1%;
         }
 
         .sign-in-and-search {
@@ -310,12 +339,22 @@ export default {
 
         .sign-up, .login {            
             font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .login {
+            border-left: 2px solid #B9D4B9;
+            padding-left: 15%;
+            height: 4vh;
+            display: flex;
+            align-items: center;
         }
 
         .text {
             font-size: 16px;
             border-left: 2px solid #B9D4B9;
             padding-left: 10%;
+            margin-top: 8%;
         }
 
     }
@@ -677,6 +716,14 @@ export default {
                 margin-top: -3px;
             }
         }
+
+        @media only screen and (min-width: 935px) {
+
+            .text {
+                margin-left: 14%;
+            }
+
+        } 
 
         @media only screen and (min-width: 1050px) {
 

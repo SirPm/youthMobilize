@@ -7,6 +7,7 @@
                 <img src="../assets/right-arrow-icon.svg" alt="rightArrow" class="right-arrow">
             </div>
         </div>
+        <hr class="trending-topic-body-hr">
         <div class="trending-topics-body">
             <div class="trending-topic">
                 <div class="trending-topic-img">
@@ -28,10 +29,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="trending-topic-video">
+                <!-- <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
-                </div>
+                </div> -->
             </div>
             <div class="trending-topic">
                 <div class="trending-topic-img">
@@ -53,10 +54,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="trending-topic-video">
+                <!-- <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
-                </div>
+                </div> -->
             </div>
             <div class="trending-topic last-trending-topic">
                 <div class="trending-topic-img">
@@ -64,6 +65,7 @@
                 </div>
                 <div class="trending-topic-content">
                     <span class="trending-topic-text trending-topics-typography tttm">What is the role of international communities on ENDSARS</span>
+                    <span class="trending-topic-text trending-topics-typography tttd">International Communities on Endsars</span>
                     <div class="trending-topic-icons">
                         <div class="trending-topic-icon-content">
                             <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
@@ -77,12 +79,11 @@
                             <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
                         </div>
                     </div>
-                    <span class="trending-topic-text trending-topics-typography tttd">International Communities on Endsars</span>
                 </div>
-                <div class="trending-topic-video">
+                <!-- <div class="trending-topic-video">
                     <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -95,8 +96,21 @@
                 </div>
                 <span class="trending-topic-text trending-topics-typography">This would go into history book</span>
                 <div class="trending-topic-video">
-                    <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
+                    <img src="../assets/play-white.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
+                </div>
+                <div class="trending-topic-icons">
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                    </div>
                 </div>
             </div>
             <div class="trending-topic">
@@ -105,8 +119,21 @@
                 </div>
                 <span class="trending-topic-text trending-topics-typography">Who ordered the lekki shooting?</span>
                 <div class="trending-topic-video">
-                    <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
+                    <img src="../assets/play-white.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
+                </div>
+                <div class="trending-topic-icons">
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                    </div>
                 </div>
             </div>
             <div class="trending-topic last-trending-topic">
@@ -115,8 +142,21 @@
                 </div>
                 <span class="trending-topic-text trending-topics-typography">Defend the future of Nigeria: Falz</span>
                 <div class="trending-topic-video">
-                    <img src="../assets/play-icon.png" alt="play-icon" class="trending-topic-play-icon">
+                    <img src="../assets/play-white.png" alt="play-icon" class="trending-topic-play-icon">
                     <span class="trending-topic-video-text">We must not back down now: Youths</span>
+                </div>
+                <div class="trending-topic-icons">
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/message-icon.svg" alt="messageIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/heart-icon.svg" alt="heartIcon" class="trending-topic-icon">
+                        <span class="trending-icon-text">2,346</span>
+                    </div>
+                    <div class="trending-topic-icon-content">
+                        <img src="../assets/share-icon.svg" alt="shareIcon" class="trending-topic-icon">
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +189,7 @@ export default {
                 box-shadow: 0 0 black;
             }
 
-            .trending-topics .trending-topics-label-arrow-mobile, .tttm, .trending-topic .trending-topic-icons {
+            .trending-topics .trending-topics-label-arrow-mobile, .tttm {
                 display: none;
             }
 
@@ -158,22 +198,32 @@ export default {
             }
 
             .trending-topics .trending-topics-label {
-                border-top: 1px solid #D0CDE1;
+                /* border-top: 1px solid #D0CDE1; */
                 border-bottom: 0;
                 padding-left: 2%;
                 padding-right: 2%;
                 justify-content: space-between;
             }
 
+            .trending-topics .trending-topic-body-hr {
+                display: block;
+                border-top: 1px solid #D0CDE1;
+                width: 96%;
+                position: absolute;
+                top: 0;
+                left: 2%;
+            }
+
             .trending-topics .trending-topics-label-arrow-desktop {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                width: 23%;
+                margin-right: 1%;
             }
 
             .trending-topics .trending-topics-label-arrow-desktop .label-arrow-text {
                 color: #333333;
+                white-space: nowrap;
+                margin-right: 5%;
             }
 
             .trending-topics .trending-topics-body {
@@ -196,13 +246,13 @@ export default {
                 /* height: 55vh; */
                 flex-direction: column;
                 width: 32%;
-                padding-bottom: 0;
+                /* padding-bottom: 0; */
                 justify-content: space-around;
             }
 
-            #ttpb-id-desktop .trending-topic {
+            /* #ttpb-id-desktop .trending-topic {
                 border-bottom: 0;
-            }
+            } */
 
             .trending-topic .trending-topic-content {
                 margin-top: 0;
@@ -227,6 +277,7 @@ export default {
                 display: flex;
                 align-items: center;
                 margin-bottom: 0.7rem;
+                margin-left: 5%;
             }
 
             .trending-topic-video-text {
@@ -235,7 +286,7 @@ export default {
             }
 
             .trending-topic-play-icon {
-                background-color: #B9D4B9;
+                background-color: #ff4500;
                 width: 9%;
                 border-radius: 50%;
                 padding: 5px;
@@ -254,6 +305,11 @@ export default {
         margin-top: 3rem;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
+        position: relative;
+    }
+
+    .trending-topic-body-hr {
+        display: none;
     }
 
     .trending-topics-label {
@@ -271,22 +327,26 @@ export default {
     .trending-topics-label-arrow-mobile {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 28%;
-        margin-left: 65%;
+        /* justify-content: space-between;
+        width: 28%; */
+        margin-left: 74%;
         padding-bottom: 1.5rem;
+        justify-content: flex-end;
+        margin-right: 4%;
     }
 
     .label-title {
         color: #333333;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .label-arrow-text {
         color: #46E146;
         font-weight: bold;
         font-size: 12px;
+        white-space: nowrap;
+        margin-right: 5%;
     }
 
     .trending-topics-body {
@@ -301,7 +361,7 @@ export default {
         margin: auto;
         border-bottom: 1px solid #00000029;
         margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 20px;
     }
 
     .last-trending-topic {
@@ -337,6 +397,7 @@ export default {
     .trending-topic-icons {
         display: flex;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     .trending-topic-icon-content {
@@ -353,11 +414,6 @@ export default {
 
         @media only screen and (max-width: 350px) and (min-width: 300px) {
 
-            .trending-topics-label-arrow-mobile {
-                width: 45%;
-                margin-left: 50%;
-            }
-
             .trending-topic-content {
                 margin-top: 0;
             }
@@ -370,11 +426,6 @@ export default {
 
         @media only screen and (max-width: 450px) and (min-width: 350px) {
 
-            .trending-topics-label-arrow-mobile {
-                width: 40%;
-                margin-left: 55%;
-            }
-
             .trending-topic-content {
                 margin-top: 10%;
             }
@@ -386,11 +437,6 @@ export default {
         }
 
         @media only screen and (max-width: 550px) and (min-width: 450px) {
-
-            .trending-topics-label-arrow-mobile {
-                width: 35%;
-                margin-left: 55%;
-            }
 
             .trending-topic-content {
                 margin-top: 20%;
@@ -418,17 +464,38 @@ export default {
             
         }
 
-        @media only screen and (max-width: 1150px) and (min-width: 1050px) {
+        @media only screen and (max-width: 1150px) and (min-width: 650px) {
 
-            
+            .trending-topic-icons {
+                margin-left: 6%;
+            }
+
+        }  
+
+        @media only screen and (min-width: 650px) {
+
+            .trending-topic-icons {
+                width: 70%;
+                margin-left: 5.5%;
+            }
+
+        }    
+
+        @media only screen and (max-width: 750px) and (min-width: 650px) {
+
+            .trending-topic-icons {
+                width: 85%;
+            }
+
+        }   
+
+        @media only screen and (max-width: 850px) and (min-width: 750px) {
+
+            .trending-topic-icons {
+                width: 80%;
+            }
 
         } 
-
-        @media only screen and (min-width: 1150px) {
-
-            
-
-        }       
 
     /* End of Responsive Styles */
 

@@ -7,6 +7,7 @@
                 <img src="../assets/right-arrow-icon.svg" alt="rightArrow" class="right-arrow">
             </div>
         </div>
+        <!-- <hr class="communities-body-hr"> -->
         <div class="communities-body">
             <div class="community">
                 <div class="community-img">
@@ -98,20 +99,30 @@ export default {
             .communities .communities-label-arrow-desktop {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                width: 21%;
+                margin-right: 1%;
+                /* justify-content: space-between;
+                width: 21%; */
             }
 
             .communities .communities-label-arrow-desktop .label-arrow-text {
                 color: #333333;
+                margin-right: 5%;
             }
 
             .communities .communities-label {
-                border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
                 padding-left: 3%;
                 padding-right: 3%;
                 justify-content: space-between;
+            }
+
+            .communities .communities-body-hr {
+                display: block;
+                border-top: 1px solid #D0CDE1;
+                width: 96%;
+                position: absolute;
+                top: 0;
+                left: 2%;
             }
 
             .communities .communities-body {
@@ -121,16 +132,26 @@ export default {
             }
 
             .communities-body .community {
-                border-bottom: 0;
+                /* border-bottom: 0; */
                 flex-direction: column;
                 width: 32%;
-                padding-bottom: 0;
+                /* padding-bottom: 0; */
                 justify-content: space-around;
                 margin: 0 auto;
             }
 
             .communities-body .last-community {
                 margin-bottom: 0;
+                margin-top: 1%;
+                border-bottom: 1px solid #00000029;
+            }
+
+            .community:first-child .community-text-div .community-text-title {
+                margin-top: 5%;
+            }
+
+            .last-community .community-text-div .community-text-title {
+                margin-top: 9%;
             }
 
             .community .community-img {
@@ -142,9 +163,15 @@ export default {
                 margin-left: 0;
             }
 
+            .community-text-div .community-text-title {                
+                margin-left: 5%;
+                margin-top: 1%;
+            }
+
             .community-text-div .community-text {
                 margin-top: 3%;
                 height: 60px;
+                margin-left: 5%;
             }
 
             .community .community-img img {
@@ -154,7 +181,8 @@ export default {
             .community .community-pinned-text-div {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
+                width: 95%;
+                margin-left: 5%;
             }
 
             .content-item {
@@ -185,9 +213,10 @@ export default {
 
     .communities {
         border-top: 7px solid #F9EA11;
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
+        position: relative;
     }
 
     .communities-label {
@@ -198,29 +227,32 @@ export default {
         padding-left: 2%;
     }
 
-    .communities-label-arrow-desktop, .community-pinned-text-div {
+    .communities-label-arrow-desktop, .community-pinned-text-div, .communities-body-hr {
         display: none;
     }
 
     .communities-label-arrow-mobile {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 26%;
-        margin-left: 70%;
+        justify-content: flex-end;
         padding-bottom: 1.5rem;
     }
 
     .label-title {
         color: #333333;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .label-arrow-text {
         color: #46E146;
         font-weight: bold;
         font-size: 12px;
+        margin-right: 2%;
+    }
+
+    .right-arrow {
+        margin-right: 3%;
     }
 
     .communities-body {
@@ -235,7 +267,7 @@ export default {
         margin: auto;
         border-bottom: 1px solid #00000029;
         margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 10px;
     }
 
     .last-community {
@@ -262,9 +294,10 @@ export default {
     }
 
     .community-text-title {
-        font-style: italic;
+        /* font-style: italic; */
         font-size: 12px;
         color: #0F6D0F;
+        font-weight: 600;
     }
 
     .community-text {
@@ -317,9 +350,19 @@ export default {
 
         } 
 
-        @media only screen and (min-width: 1150px) {
+        @media only screen and (min-width: 1050px) {
 
-            
+            .communities-body .last-community {
+                margin-top: 0;
+            }
+
+            .community:first-child .community-text-div .community-text-title {
+                margin-top: 0;
+            }
+
+            .last-community .community-text-div .community-text-title {
+                margin-top: 2%;
+            }
 
         }       
 

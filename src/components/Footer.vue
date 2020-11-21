@@ -105,6 +105,14 @@ export default {
                 padding-bottom: 1rem;
             }
 
+            #footer::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border-bottom: 2px solid #ffffff;
+                top: 70%;
+            }
+
             .footer-links .upper-footer-links {
                 width: 60%;
             }
@@ -130,6 +138,7 @@ export default {
             .footer .footer-ending {
                 display: flex;
                 justify-content: space-between;
+                margin-top: 100px;
             }
 
             .footer-ending .terms-privacy-cookies {
@@ -151,6 +160,7 @@ export default {
         width: 95%;
         margin: auto;
         padding-bottom: 3rem;
+        position: relative;
     }
 
     .heading {

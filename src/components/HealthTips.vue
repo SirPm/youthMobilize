@@ -7,6 +7,7 @@
                 <img src="../assets/right-arrow-icon.svg" alt="rightArrow" class="right-arrow">
             </div>
         </div>
+        <hr class="health-tips-div-hr">
         <div class="health-tips-div">
             <div class="health-tip">
                 <img src="../assets/aproko-doctor.png" alt="aprokoDoctor" class="health-tip-img">
@@ -66,7 +67,6 @@ export default {
             }
 
             .health-tips .heading {
-                border-top: 1px solid #D0CDE1;
                 border-bottom: 0;
                 padding-left: 2%;
                 padding-right: 2%;
@@ -77,12 +77,22 @@ export default {
             .heading .health-tips-arrow-desktop {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                width: 21%;
+                margin-right: 1%;
             }
 
             .health-tips-arrow-desktop .health-tips-arrow-text {                
                 color: #2F2E41;
+                white-space: nowrap;
+                margin-right: 5%;
+            }
+
+            .health-tips .health-tips-div-hr {
+                display: block;
+                border-top: 1px solid #D0CDE1;
+                width: 96%;
+                position: absolute;
+                top: 0;
+                left: 2%;
             }
 
             .health-tips-div .health-tip {
@@ -107,13 +117,14 @@ export default {
     /* End of Desktop Styles */
 
     .health-tips {
-        margin-top: 3rem;
+        margin-top: 4rem;
         border-top: 7px solid #2D8CFF;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
+        position: relative;
     }
 
-    .health-tips-arrow-desktop, #htDesktop {
+    .health-tips-arrow-desktop, #htDesktop, .health-tips-div-hr {
         display: none;
     }
 
@@ -168,7 +179,7 @@ export default {
 
     .text {
         color: #707070;
-        font-size: 14px;
+        font-size: 16px;
         height: 80%;
         margin-top: 5%;
         line-height: 25px;
@@ -177,9 +188,8 @@ export default {
     .health-tips-arrow-mobile {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 19%;
-        margin-left: 70%;
+        justify-content: flex-end;
+        margin-right: 3%;
         padding-bottom: 1.5rem;
         margin-top: 20%;
     }
@@ -188,6 +198,7 @@ export default {
         color: #46E146;
         font-weight: bold;
         font-size: 12px;
+        margin-right: 2%;
     }
 
 
@@ -195,27 +206,21 @@ export default {
 
         @media only screen and (max-width: 350px) and (min-width: 300px) {
 
-            .health-tips-arrow-mobile {
-                width: 35%;
-                margin-left: 55%;
-            }
+            
 
         }
 
         @media only screen and (max-width: 450px) and (min-width: 350px) {
 
-            .health-tips-arrow-mobile {
-                width: 30%;
-                margin-left: 65%;
-            }
+            
 
         }
 
         @media only screen and (max-width: 550px) and (min-width: 450px) {
 
-            .health-tips-arrow-mobile {
+            /* .health-tips-arrow-mobile {
                 width: 23%;
-            }
+            } */
 
         }
 
