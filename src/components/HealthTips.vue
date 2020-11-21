@@ -140,7 +140,7 @@ export default {
     }
 
     .heading-text {
-        font-size: 20px;
+        font-size: 30px;
         color: #333333;
         font-weight: bold;
     }

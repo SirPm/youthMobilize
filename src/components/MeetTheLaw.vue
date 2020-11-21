@@ -275,7 +275,7 @@ export default {
 
             .card::after {
                 content: "";
-                border-bottom: 0.1px solid #00000012;
+                border-bottom: 2px solid #00000012;
                 width: 100%;
                 left: 0;
                 position: absolute;
