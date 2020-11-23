@@ -1,5 +1,5 @@
 <template>
-    <div class="below-header">
+    <div class="below-header" id="belowHeader">
         <img src="../assets/caution-img.svg" alt="caution-img" class="caution-img">
         <div class="below-header-div">
             <div class="end-sars-div">
@@ -62,6 +62,10 @@ export default {
         .it-text-div .it-text {
             font-size: 120px;
         }
+    }
+
+    #belowHeader {
+        margin-top: 20%;
     }
 
     .below-header-gen {
@@ -148,9 +152,11 @@ export default {
 
         }
 
-        @media only screen and (max-width: 550px) and (min-width: 450px) {
+        @media only screen and (min-width: 650px) {
 
-            
+            #belowHeader {
+                margin-top: 10%;
+            }
 
         }
 

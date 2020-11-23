@@ -8,8 +8,9 @@
             <div class="desktop-header-inner">
                 <ul class="desktop-links">
                     <li class="desktop-link-item desktop-link-item-home">
-                        <div class="home"><img src="../assets/homeIcon.svg" alt="homeIcon" class="home-icon"></div>
-                        <a href="!#" class="desktop-link">Home</a>
+                        <div class="home" v-bind:class="{ currentPageIconStyle : currentPageIconStatus }"><img src="../assets/homeIcon.svg" alt="homeIcon" class="home-icon"></div>
+                        <!-- make more research on how you can make the current routed page have its corresponding header link hover styles visible -->
+                        <a href="!#" class="desktop-link" v-bind:class="{ currentPageStyle : currentPageStatus }">Home</a>
                     </li>
                     <li class="desktop-link-item">
                         <div class="trending"><img src="../assets/trending-icon-50.png" alt="trendingIcon" class="dli-icon"></div>
@@ -73,7 +74,7 @@
         <nav class="nav" v-bind:class="{ open: isOpen }">
             <ul class="menu-nav" v-bind:class="{ open: isOpen }">
                 <li class="menu-nav__item active" v-bind:class="{ open: isOpen }">
-                    <a href="!#" class="menu-nav__link">Youth Mobilize</a>
+                    <span class="menu-nav__link">Youth Mobilize</span>
                     <ul class="sub-menu-nav">
                         <li class="sub-menu-nav__item">
                             <a href="!#" class="sub-menu-nav__link">Home</a>
@@ -117,7 +118,9 @@ export default {
             isOpen: false,
             isClose: false,
             subDesktopLinksStatusCommunity: false,
-            subDesktopLinksStatusMore: false
+            subDesktopLinksStatusMore: false,
+            currentPageStatus: true,
+            currentPageIconStatus: true
         }
     },
     methods: {
@@ -155,7 +158,10 @@ export default {
         height: fit-content;
         display: flex;
         box-shadow: 0 3px 6px #00000029;
-        position: relative;
+        /* position: relative; */
+        position: fixed;
+        top: 0;
+        z-index: 600;
     }
 
     ul {
@@ -229,11 +235,13 @@ export default {
             display: none;
         }
 
-        .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more {
+        .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more, .currentPageIconStyle {
             display: block;
         }
 
-        .desktop-link-item:hover > .desktop-link, .desktop-link-item:hover > .dli-sub > .desktop-link {
+
+
+        .desktop-link-item:hover > .desktop-link, .desktop-link-item:hover > .dli-sub > .desktop-link, .currentPageStyle {
             border-bottom: 3px solid #46E146;
             padding-bottom: 30px;
             border-radius: 3px;
@@ -370,6 +378,9 @@ export default {
 
     .youth-mobilize-logo-div {
         width: 20%;
+        z-index: 600;
+        position: relative;
+        background-image: linear-gradient( to right, #DEFFDE, #ECECEC );
     }
 
     .youth-mobilize-logo {
@@ -676,31 +687,31 @@ export default {
 
         @media only screen and (max-width: 350px) and (min-width: 300px) {
             .nav .menu-nav {
-                height: 91vh;
+                height: 94vh;
                 margin-top: -25px;
             }
         } 
         @media only screen and (max-width: 400px) and (min-width: 350px) {
             .nav .menu-nav {
-                height: 91vh;
+                height: 95vh;
                 margin-top: -21px;
             }
         } 
         @media only screen and (max-width: 450px) and (min-width: 400px) {
             .nav .menu-nav {
-                height: 91vh;
+                height: 94vh;
                 margin-top: -18px;
             }
         } 
         @media only screen and (max-width: 500px) and (min-width: 450px) {
             .nav .menu-nav {
-                height: 91vh;
+                height: 93vh;
                 margin-top: -14px;
             }
         } 
         @media only screen and (max-width: 550px) and (min-width: 500px) {
             .nav .menu-nav {
-                height: 91vh;
+                height: 92vh;
                 margin-top: -11px;
             }
         } 
