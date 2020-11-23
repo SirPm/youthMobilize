@@ -213,7 +213,7 @@ export default {
 
     .communities {
         border-top: 7px solid #F9EA11;
-        /* margin-top: 3rem; */
+        margin-top: 3rem;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
         position: relative;
