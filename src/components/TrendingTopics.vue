@@ -302,7 +302,7 @@ export default {
 
     .trending-topics {
         border-top: 7px solid #46E146;
-        margin-top: 6rem;
+        margin-top: 3rem;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
         position: relative;
