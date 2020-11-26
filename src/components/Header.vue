@@ -402,8 +402,8 @@ export default {
 
     .person-icon {
         margin-left: 63%;
-        border-right: 1px solid #a6a4b3d3;
-        border-left: 1px solid #a6a4b3d3;
+        border-right: 1px solid #ddd9f7d3;
+        border-left: 1px solid #ddd9f7d3;
         width: 12%;
         /* padding: 5px;
         padding-right: 10px; */
@@ -413,7 +413,7 @@ export default {
 
     .search-icon {
         /* margin-left: 2%; */
-        border-right: 1px solid #a6a4b3d3;
+        border-right: 1px solid #ddd9f7d3;
         width: 12%;
         /* padding: 5px;
         padding-right: 10px; */
@@ -430,7 +430,7 @@ export default {
 
     .menu-btn {
         position: absolute;
-        /* top: 1.4rem; */
+        top: 1.34rem;
         right: 1rem;
         width: 20px;
         height: 20px;
@@ -702,50 +702,36 @@ export default {
 
         }
 
-        @media only screen and (max-width: 350px) and (min-width: 300px) {
-            .nav .menu-nav {
-                height: 94vh;
-                margin-top: -25px;
-            }
-        } 
-        @media only screen and (max-width: 400px) and (min-width: 350px) {
-            .nav .menu-nav {
-                height: 95vh;
-                margin-top: -21px;
-            }
-        } 
         @media only screen and (max-width: 450px) and (min-width: 400px) {
-            .nav .menu-nav {
-                height: 94vh;
-                margin-top: -18px;
-            }
 
             .person-icon {
                 margin-left: 60%;
             }
         } 
-        @media only screen and (max-width: 500px) and (min-width: 450px) {
-            .nav .menu-nav {
-                height: 93vh;
-                margin-top: -14px;
+
+        @media only screen and (max-width: 350px) and (min-width: 300px) {
+            .menu-btn.close {
+                width: 14vw;
             }
-        } 
-        @media only screen and (max-width: 550px) and (min-width: 500px) {
-            .nav .menu-nav {
-                height: 92vh;
-                margin-top: -11px;
+        }
+         
+        @media only screen and (max-width: 400px) and (min-width: 350px) {
+            .menu-btn.close {
+                width: 11vw;
             }
-        } 
-        @media only screen and (max-width: 600px) and (min-width: 550px) {
+        }
+
+        @media only screen and (max-width: 500px) and (min-width: 400px) {
+            .menu-btn.close {
+                width: 10vw;
+            }
+        }
+
+
+        @media only screen and (max-width: 650px) and (min-width: 300px) {
             .nav .menu-nav {
                 height: 91vh;
-                margin-top: -6px;
-            }
-        } 
-        @media only screen and (max-width: 650px) and (min-width: 600px) {
-            .nav .menu-nav {
-                height: 91vh;
-                margin-top: -3px;
+                margin-top: -7px;
             }
         }
 
