@@ -402,8 +402,8 @@ export default {
 
     .person-icon {
         margin-left: 63%;
-        border-right: 1px solid #ddd9f7d3;
-        border-left: 1px solid #ddd9f7d3;
+        border-right: 1px solid #B9D4B9;
+        border-left: 1px solid #B9D4B9;
         width: 12%;
         /* padding: 5px;
         padding-right: 10px; */
@@ -413,7 +413,7 @@ export default {
 
     .search-icon {
         /* margin-left: 2%; */
-        border-right: 1px solid #ddd9f7d3;
+        border-right: 1px solid #B9D4B9;
         width: 12%;
         /* padding: 5px;
         padding-right: 10px; */
@@ -731,7 +731,7 @@ export default {
         @media only screen and (max-width: 650px) and (min-width: 300px) {
             .nav .menu-nav {
                 height: 91vh;
-                margin-top: -7px;
+                margin-top: -7.5px;
             }
         }
 
