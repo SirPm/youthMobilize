@@ -20,7 +20,7 @@
                         <div class="communities"><img src="../assets/communities-icon.png" alt="communitiesIcon" class="dli-icon"></div>
                         <div class="dli-sub">
                             <span class="desktop-link">Communities</span>
-                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksCommunity">
+                            <!-- <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksCommunity"> -->
                         </div>
                         <ul class="sub-desktop-links" v-bind:class="{ showSubDesktopLinks : subDesktopLinksStatusCommunity }">
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Nigerian Youths</a></li>
@@ -36,7 +36,7 @@
                         <div class="more"><img src="../assets/more-icon.svg" alt="moreIcon" class="dli-icon"></div>
                         <div class="dli-sub">
                             <span class="desktop-link">More</span>
-                            <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksMore">
+                            <!-- <img src="../assets/caret.png" alt="caretIcon" class="caret-icon" @click="toggleSubLinksMore"> -->
                         </div>
                         <ul class="sub-desktop-links" v-bind:class="{ showSubDesktopLinks : subDesktopLinksStatusMore }">
                             <li class="sub-desktop-link-item"><a href="!#" class="sub-desktop-link">Post Articles</a></li>
@@ -247,13 +247,14 @@ export default {
             border-radius: 3px;
         } */
 
-        .currentPageIconStyle {
+        /* .currentPageIconStyle {
             display: block;
-        }
+        } */
 
         .currentPageStyle {
-            border-bottom: 3px solid #46E146;
-            padding-bottom: 30px;
+            border-bottom: 4px solid #46E146;
+            padding-top: 31px;
+            padding-bottom: 25px;
             border-radius: 3px;
         }
 
@@ -326,6 +327,7 @@ export default {
             color: #ffffff;
             font-size: 11px;
             text-transform: uppercase;
+            align-self: center;
         }
 
         .desktop-sign-in-search-and-text {
