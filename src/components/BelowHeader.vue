@@ -142,6 +142,10 @@ export default {
                 font-size: 55px;
             }
 
+            #belowHeader {
+                margin-top: 24%;
+            }
+
         }
 
         @media only screen and (max-width: 450px) and (min-width: 350px) {

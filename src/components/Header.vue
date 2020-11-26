@@ -235,13 +235,23 @@ export default {
             display: none;
         }
 
-        .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more, .currentPageIconStyle {
+        /* .desktop-link-item:hover > .home, .desktop-link-item:hover > .trending, .desktop-link-item:hover > .communities, .desktop-link-item:hover > .more, .currentPageIconStyle {
+            display: block;
+        } */
+
+
+
+        /* .desktop-link-item:hover > .desktop-link, .desktop-link-item:hover > .dli-sub > .desktop-link, .currentPageStyle {
+            border-bottom: 3px solid #46E146;
+            padding-bottom: 30px;
+            border-radius: 3px;
+        } */
+
+        .currentPageIconStyle {
             display: block;
         }
 
-
-
-        .desktop-link-item:hover > .desktop-link, .desktop-link-item:hover > .dli-sub > .desktop-link, .currentPageStyle {
+        .currentPageStyle {
             border-bottom: 3px solid #46E146;
             padding-bottom: 30px;
             border-radius: 3px;
@@ -391,19 +401,24 @@ export default {
     }
 
     .person-icon {
-        margin-left: 55%;
-        border-right: 1px solid white;
+        margin-left: 63%;
+        border-right: 1px solid #a6a4b3d3;
+        border-left: 1px solid #a6a4b3d3;
         width: 12%;
-        padding: 5px;
-        padding-right: 10px;
+        /* padding: 5px;
+        padding-right: 10px; */
+        padding: 3px;
+        height: 25px;
     }
 
     .search-icon {
-        margin-left: 2%;
-        border-right: 1px solid white;
+        /* margin-left: 2%; */
+        border-right: 1px solid #a6a4b3d3;
         width: 12%;
-        padding: 5px;
-        padding-right: 10px;
+        /* padding: 5px;
+        padding-right: 10px; */
+        padding: 3px;
+        height: 25px;
     }
 
     .header-icons-div {
@@ -429,13 +444,13 @@ export default {
         background-color: red;
         top: 0;
         right: 0;
-        width: 12vw;
+        width: 9vw;
         height: 100%;
     }
 
     .menu-btn__burger {
         width: 20px;
-        height: 3px;
+        height: 2px;
         background-color: #ffffff;
         position: absolute;
         top: 0.5rem;
@@ -449,7 +464,7 @@ export default {
         content: '';
         width: 20px;
         top: -8px;
-        height: 3px;
+        height: 2px;
         background-color: #ffffff;
         position: absolute;
         -webkit-transition: 0.5s ease-in-out;
@@ -461,7 +476,7 @@ export default {
         content: '';
         width: 20px;
         top: 8px;
-        height: 3px;
+        height: 2px;
         background-color: #ffffff;
         position: absolute;
         -webkit-transition: 0.5s ease-in-out;
@@ -618,7 +633,7 @@ export default {
         @media only screen and (max-width: 350px) and (min-width: 300px) {
 
             .person-icon {
-                margin-left: 45%;
+                margin-left: 51%;
                 width: 15%;
             }
 
@@ -631,7 +646,7 @@ export default {
         @media only screen and (max-width: 450px) and (min-width: 350px) {
 
             .person-icon {
-                margin-left: 55%;
+                margin-left: 58%;
                 width: 13%;
             }
 
@@ -644,7 +659,7 @@ export default {
         @media only screen and (max-width: 650px) and (min-width: 500px) {
 
             .person-icon {
-                margin-left: 60%;
+                margin-left: 68%;
                 width: 10%;
             }
 
@@ -679,9 +694,11 @@ export default {
 
         }
 
-        @media only screen and (max-width: 1050px) and (min-width: 850px) {
+        @media only screen and (max-width: 650px) and (min-width: 200px) {
 
-            
+            .header {
+                height: 59px;
+            }
 
         }
 
@@ -701,6 +718,10 @@ export default {
             .nav .menu-nav {
                 height: 94vh;
                 margin-top: -18px;
+            }
+
+            .person-icon {
+                margin-left: 60%;
             }
         } 
         @media only screen and (max-width: 500px) and (min-width: 450px) {

@@ -90,6 +90,7 @@ export default {
                 border-top: 0px solid #F6F6F6;
                 border-radius: 0;
                 box-shadow: 0 0 black;
+                margin-top: 0;
             }
 
             .communities .communities-label-arrow-mobile {
@@ -213,7 +214,7 @@ export default {
 
     .communities {
         border-top: 7px solid #F9EA11;
-        /* margin-top: 3rem; */
+        margin-top: 3rem;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
         position: relative;

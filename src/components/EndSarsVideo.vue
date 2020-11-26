@@ -183,7 +183,7 @@ export default {
     }
 
     .endsars-videos {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .endsars-video {

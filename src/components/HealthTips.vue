@@ -117,7 +117,7 @@ export default {
     /* End of Desktop Styles */
 
     .health-tips {
-        margin-top: 4rem;
+        margin-top: 3rem;
         border-top: 7px solid #2D8CFF;
         border-radius: 16px;
         box-shadow: 0 3px 6px #00000029;
