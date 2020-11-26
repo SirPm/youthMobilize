@@ -731,7 +731,7 @@ export default {
         @media only screen and (max-width: 650px) and (min-width: 300px) {
             .nav .menu-nav {
                 height: 91vh;
-                margin-top: -7.5px;
+                margin-top: -8px;
             }
         }
 
