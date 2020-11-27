@@ -375,6 +375,7 @@ export default {
             border-left: 2px solid #B9D4B9;
             padding-left: 10%;
             margin-top: 8%;
+            padding-bottom: 8px;
         }
 
     }
